@@ -2,19 +2,17 @@ function maybeTrue() {
   return Math.random() >= 0.5
 }
 
-function forLoop(array) {
-  var size = array.length
-  for(let i = 0; i < 25; i++) {
-    if(i === 1) {
-      array[size+i]="I am 1 strange loop."
-      console.log(array[i])
+function forLoop(array){
+  for (let i = 0; i < 25; i++){
+    if (i===1){
+      console.log("I am 1 strange loop")
+      return array
     }
     else {
-      array[size+i]=`I am ${i} strange loops.`
-      console.log(array[i])
+      console.log("I am " + ${i} + " strange loops")
+      return array
     }
   }
-  return array
 }
 
 function whileLoop(n) {
